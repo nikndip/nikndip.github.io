@@ -2,27 +2,98 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>О себе</title>
-    <meta name="description" content="Информация обо мне как о разработчике">
-    <meta name="keywords" content="о себе, разработчик, навыки">
+    <title>Обо мне — Никита Доронин</title>
+    <meta name="description" content="Опыт и фокус веб-разработчика Никиты Доронина.">
+    <meta name="keywords" content="Никита Доронин, web developer, опыт, навыки, CV">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header>
-    <h1>О себе</h1>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О себе</a>
-        <a href="projects.html">Проекты</a>
-    </nav>
+<body class="page">
+<header class="topbar">
+    <div class="container">
+        <div class="brand">
+            <span class="brand-mark">ND</span>
+            <div>
+                <p class="brand-name">Никита Доронин</p>
+                <p class="brand-role">Web Developer</p>
+            </div>
+        </div>
+        <nav class="site-nav">
+            <a href="index.html#hero" class="nav-link">Главная</a>
+            <a href="index.html#about" class="nav-link is-active">Обо мне</a>
+            <a href="index.html#projects" class="nav-link">Проекты</a>
+            <a href="index.html#contact" class="nav-link">Контакты</a>
+        </nav>
+    </div>
 </header>
 
 <main>
-    <section>
-        <p>Я веб-разработчик, который любит чистый код, понятный UI и аккуратные Git-репозитории.</p>
-        <p>Занимаюсь Frontend/Backend, изучаю новые технологии и пишу пет-проекты.</p>
+    <section class="section">
+        <div class="container section-grid">
+            <div>
+                <p class="eyebrow">Профиль</p>
+                <h1 class="section-title rainbow-text">Никита Доронин — веб-разработчик с продуктовым подходом</h1>
+                <p class="section-lead">Работаю на стыке frontend и backend, чтобы создавать цельный пользовательский опыт. Быстро прототипирую, внедряю дизайн-системы и выстраиваю архитектуру под рост продукта.</p>
+                <div class="list-grid">
+                    <div class="info-card">
+                        <p class="info-title">Frontend</p>
+                        <p>Производительные SPA/SSR, React/Next.js, оптимизация Core Web Vitals, анимации и доступность.</p>
+                    </div>
+                    <div class="info-card">
+                        <p class="info-title">Backend</p>
+                        <p>Node.js + Express/Nest, REST API, авторизация, интеграции и мониторинг стабильности.</p>
+                    </div>
+                    <div class="info-card">
+                        <p class="info-title">Команда</p>
+                        <p>Agile, code review, документация, прозрачные демо и прогнозируемые сроки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <p class="card-label">Контакты</p>
+                <h2>Всегда на связи</h2>
+                <p class="muted">Пишите, если нужен быстрый прототип, редизайн или разработка с нуля.</p>
+                <a class="button" href="mailto:karacharovskii57@mail.com">karacharovskii57@mail.com</a>
+                <p class="muted">Ответ в течение рабочего дня.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="eyebrow">Ценности</p>
+            <h2 class="section-title rainbow-text">То, что определяет мой подход</h2>
+            <div class="list-grid">
+                <div class="info-card">
+                    <p class="info-title">Продуктовый взгляд</p>
+                    <p>Смотрю на задачу глазами пользователя, предлагаю метрики успеха и короткие итерации.</p>
+                </div>
+                <div class="info-card">
+                    <p class="info-title">Чистая архитектура</p>
+                    <p>Пишу поддерживаемый код, покрываю критичный функционал тестами и документирую решения.</p>
+                </div>
+                <div class="info-card">
+                    <p class="info-title">Коммуникация</p>
+                    <p>Показываю промежуточный результат, держу заказчика в курсе и прозрачно оцениваю сроки.</p>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <p class="brand-name">Никита Доронин</p>
+            <p class="muted">Web Developer · Frontend & Backend</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html#hero">Наверх</a>
+            <a href="mailto:karacharovskii57@mail.com">Связаться</a>
+            <span class="muted">© <span id="year"></span></span>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
