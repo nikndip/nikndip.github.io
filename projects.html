@@ -2,30 +2,126 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Проекты</title>
-    <meta name="description" content="Список моих проектов">
-    <meta name="keywords" content="проекты, портфолио, разработка">
+    <title>Проекты — Никита Доронин</title>
+    <meta name="description" content="Проекты и кейсы веб-разработчика Никиты Доронина.">
+    <meta name="keywords" content="проекты, кейсы, портфолио, Никита Доронин">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header>
-    <h1>Мои проекты</h1>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О себе</a>
-        <a href="projects.html">Проекты</a>
-    </nav>
+<body class="page">
+<header class="topbar">
+    <div class="container">
+        <div class="brand">
+            <span class="brand-mark">ND</span>
+            <div>
+                <p class="brand-name">Никита Доронин</p>
+                <p class="brand-role">Web Developer</p>
+            </div>
+        </div>
+        <nav class="site-nav">
+            <a href="index.html#hero" class="nav-link">Главная</a>
+            <a href="index.html#about" class="nav-link">Обо мне</a>
+            <a href="index.html#projects" class="nav-link is-active">Проекты</a>
+            <a href="index.html#contact" class="nav-link">Контакты</a>
+        </nav>
+    </div>
 </header>
 
 <main>
-    <section>
-        <ul>
-            <li><strong>Проект 1:</strong> Описание первого проекта.</li>
-            <li><strong>Проект 2:</strong> Описание второго проекта.</li>
-            <li><strong>Проект 3:</strong> Описание третьего проекта.</li>
-        </ul>
+    <section class="section">
+        <div class="container">
+            <p class="eyebrow">Кейсы</p>
+            <h1 class="section-title">Подборка проектов</h1>
+            <p class="section-lead">Каждый проект довожу до измеримого результата: скорость загрузки, конверсию, удобство поддержки и масштабирования.</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <p class="card-label">Frontend</p>
+                    <h3>Design System Dashboard</h3>
+                    <p>Панель для управления библиотекой UI-компонентов с живой документацией, предпросмотром и аналитикой использования.</p>
+                    <ul class="project-tags">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Storybook</li>
+                    </ul>
+                </article>
+                <article class="project-card">
+                    <p class="card-label">Fullstack</p>
+                    <h3>Task Flow API</h3>
+                    <p>Трекер задач с ролевой моделью, загрузкой файлов, уведомлениями и дашбордом метрик. Автотесты и CI/CD настроены.</p>
+                    <ul class="project-tags">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </article>
+                <article class="project-card">
+                    <p class="card-label">Landing</p>
+                    <h3>Startup Launch Page</h3>
+                    <p>Лендинг с анимациями, сбором лидов и аналитикой. Оптимизирован под Core Web Vitals и SEO.</p>
+                    <ul class="project-tags">
+                        <li>Next.js</li>
+                        <li>SEO</li>
+                        <li>Analytics</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container section-grid">
+            <div>
+                <p class="eyebrow">Как работаю</p>
+                <h2 class="section-title">Прозрачный процесс</h2>
+                <p class="section-lead">Разбиваю задачи на спринты, показываю демо, фиксирую договорённости и собираю обратную связь.</p>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-num">01</span>
+                        <div>
+                            <p class="info-title">План</p>
+                            <p>Фиксируем цели, сроки и метрики. Собираю требования и предлагаю стек.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">02</span>
+                        <div>
+                            <p class="info-title">Реализация</p>
+                            <p>Делаю прототипы, согласовываю дизайн, пишу код и тесты. Еженедельные демо.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">03</span>
+                        <div>
+                            <p class="info-title">Релиз</p>
+                            <p>Деплой, настройка мониторинга и аналитики, поддержка и улучшения по метрикам.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <p class="card-label">Связаться</p>
+                <h2>Нужен похожий результат?</h2>
+                <p class="muted">Опишите задачу — предложу вариант решения и сроки.</p>
+                <a class="button" href="mailto:karacharovskii57@mail.com">Написать Никите</a>
+                <p class="muted">karacharovskii57@mail.com</p>
+            </div>
+        </div>
     </section>
 </main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <p class="brand-name">Никита Доронин</p>
+            <p class="muted">Web Developer · Frontend & Backend</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html#hero">Наверх</a>
+            <a href="mailto:karacharovskii57@mail.com">Связаться</a>
+            <span class="muted">© <span id="year"></span></span>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
