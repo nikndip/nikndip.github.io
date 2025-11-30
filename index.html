@@ -2,28 +2,246 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Портфолио</title>
-    <meta name="description" content="Личное портфолио разработчика">
-    <meta name="keywords" content="портфолио, разработчик, проекты">
+    <title>Портфолио — Никита Доронин</title>
+    <meta name="description" content="Современное портфолио веб-разработчика Никиты Доронина.">
+    <meta name="keywords" content="Доронин Никита, веб-разработчик, портфолио, frontend, backend">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Добро пожаловать</h1>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О себе</a>
-            <a href="projects.html">Проекты</a>
-        </nav>
+<body class="page">
+    <header class="topbar">
+        <div class="container">
+            <div class="brand">
+                <span class="brand-mark">ND</span>
+                <div>
+                    <p class="brand-name">Никита Доронин</p>
+                    <p class="brand-role">Web Developer</p>
+                </div>
+            </div>
+            <nav class="site-nav">
+                <a href="#hero" class="nav-link is-active">Главная</a>
+                <a href="#about" class="nav-link">Обо мне</a>
+                <a href="#projects" class="nav-link">Проекты</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Привет!</h2>
-            <p>Это мой сайт-портфолио. Здесь можно найти информацию обо мне и моих проектах.</p>
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Full-stack · Product Focus · UI/UX</p>
+                    <h1 class="rainbow-text">Привет! Я Никита Доронин — создаю понятные веб-продукты под рост бизнеса.</h1>
+                    <p class="lead">Проектирую простые сценарии, упаковываю их в быстрые интерфейсы и настраиваю серверную часть без боли. Слежу за метриками, чтобы продукт был полезен и прибыльный.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="#projects">Смотреть проекты</a>
+                        <a class="button ghost" href="mailto:karacharovskii57@mail.com">Написать мне</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="meta-card">
+                            <p class="meta-title">Фокус</p>
+                            <p class="meta-value">Продуктовые интерфейсы, дизайн-системы</p>
+                        </div>
+                        <div class="meta-card">
+                            <p class="meta-title">Стек</p>
+                            <p class="meta-value">TypeScript · React/Next.js · Node.js</p>
+                        </div>
+                        <div class="meta-card">
+                            <p class="meta-title">Формат</p>
+                            <p class="meta-value">Удалённо · Agile · Демо каждую неделю</p>
+                        </div>
+                        <div class="meta-card">
+                            <p class="meta-title">Связь</p>
+                            <p class="meta-value">karacharovskii57@mail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <p class="card-label">Чем помогу</p>
+                    <h2>От идеи до стабильного релиза</h2>
+                    <p>Соберу понятный прототип, запущу MVP и доведу до стабильного продукта: без раздувания сроков и документации на потом.</p>
+                    <div class="pill-list">
+                        <span class="pill">Интерфейсы под задачи бизнеса</span>
+                        <span class="pill">Оптимизация скорости</span>
+                        <span class="pill">Интеграции и API</span>
+                        <span class="pill">Автоматизация и контроль качества</span>
+                    </div>
+                    <a class="inline-link" href="#contact">Готов обсудить проект →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container section-grid">
+                <div>
+                    <p class="eyebrow">Обо мне</p>
+                    <h2 class="section-title rainbow-text">Разрабатываю удобные интерфейсы и надёжные сервисы.</h2>
+                    <p class="section-lead">Делаю ставку на лаконичный UI, быструю загрузку и прозрачный процесс. Помогаю командам выпускать фичи предсказуемо: от прототипа и архитектуры до релиза и поддержки.</p>
+                    <div class="list-grid">
+                        <div class="info-card">
+                            <p class="info-title">Frontend</p>
+                            <p>React/Next.js, TypeScript, управление состоянием, дизайн-системы и анимации без лишнего кода.</p>
+                        </div>
+                        <div class="info-card">
+                            <p class="info-title">Backend</p>
+                            <p>Node.js, REST API, авторизация, интеграции и тестирование, чтобы продукт был стабильным.</p>
+                        </div>
+                        <div class="info-card">
+                            <p class="info-title">Коммуникация</p>
+                            <p>Демо каждую неделю, прозрачные задачи в бэклоге, документация по ходу работы.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlights">
+                    <div class="highlight">
+                        <p class="highlight-value">5+</p>
+                        <p class="highlight-text">лет с веб-разработкой</p>
+                    </div>
+                    <div class="highlight">
+                        <p class="highlight-value">10/10</p>
+                        <p class="highlight-text">по отзывам команд за коммуникацию</p>
+                    </div>
+                    <div class="highlight">
+                        <p class="highlight-value">90%</p>
+                        <p class="highlight-text">фич выходят в срок</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills">
+            <div class="container">
+                <p class="eyebrow">Навыки</p>
+                <h2 class="section-title rainbow-text">Технологии, с которыми работаю</h2>
+                <div class="chip-grid">
+                    <span class="chip">HTML5 / CSS3</span>
+                    <span class="chip">JavaScript / TypeScript</span>
+                    <span class="chip">React / Next.js</span>
+                    <span class="chip">Node.js / Express</span>
+                    <span class="chip">REST API</span>
+                    <span class="chip">UI/UX Design</span>
+                    <span class="chip">Git / CI</span>
+                    <span class="chip">Vite / Webpack</span>
+                    <span class="chip">Testing</span>
+                    <span class="chip">Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Кейсы</p>
+                        <h2 class="section-title rainbow-text">Проекты, которыми горжусь</h2>
+                    </div>
+                    <a class="inline-link" href="mailto:karacharovskii57@mail.com">Запросить демо</a>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card featured">
+                        <div>
+                            <p class="card-label">Кейс</p>
+                            <h3>Product Dashboard</h3>
+                            <p>Лёгкая и наглядная панель управления фичами продукта. Собрал дизайн-систему, ускорил загрузку, добавил роли и контроль качества.</p>
+                            <ul class="project-tags">
+                                <li>Next.js</li>
+                                <li>TypeScript</li>
+                                <li>Design System</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="info-title">Что сделал</p>
+                            <p class="muted">Пересобрал UI в модульные компоненты, связал их с API, добавил светлую/тёмную тему и превью для контента. Настроил сборку и автоматические проверки.</p>
+                            <p class="info-title">Результат</p>
+                            <p class="muted">Сократил время на выпуск фич вдвое, а поддержка интерфейса стала предсказуемой.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <p class="card-label">Fullstack</p>
+                        <h3>Task Flow API</h3>
+                        <p>REST API и веб-клиент для трекинга задач с ролями, загрузкой файлов и уведомлениями. Покрыл критичные сценарии тестами и подключил CI.</p>
+                        <ul class="project-tags">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </article>
+                    <article class="project-card">
+                        <p class="card-label">Landing</p>
+                        <h3>Startup Launch Page</h3>
+                        <p>Лендинг с понятной структурой, анимацией и аналитикой. Улучшил конверсию и показатели Core Web Vitals.</p>
+                        <ul class="project-tags">
+                            <li>Next.js</li>
+                            <li>SEO</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process">
+            <div class="container section-grid">
+                <div>
+                    <p class="eyebrow">Подход</p>
+                    <h2 class="section-title rainbow-text">Делаю разработку прозрачной</h2>
+                    <p class="section-lead">Каждый этап фиксируем в задачах и демо. Команда и заказчик видят прогресс, а решения остаются в документации.</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-num">01</span>
+                        <div>
+                            <p class="info-title">Аналитика</p>
+                            <p>Разбор задачи, короткий ресёрч, выбор архитектуры и стеков под метрики.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">02</span>
+                        <div>
+                            <p class="info-title">Дизайн и разработка</p>
+                            <p>Прототипы, дизайн-система, код, ревью и тесты — чтобы избежать сюрпризов на релизе.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">03</span>
+                        <div>
+                            <p class="info-title">Запуск и поддержка</p>
+                            <p>Релиз, мониторинг, улучшения по метрикам и пожеланиям пользователей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-card">
+                <div>
+                    <p class="eyebrow">Контакты</p>
+                    <h2 class="section-title rainbow-text">Готов подключиться к продукту или взять задачу под ключ</h2>
+                    <p class="section-lead">Напишите коротко о проекте — отвечу в течение рабочего дня, предложу варианты и таймлайн.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="button" href="mailto:karacharovskii57@mail.com">karacharovskii57@mail.com</a>
+                    <p class="muted">Удалённый формат, демонстрации каждую неделю.</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="brand-name">Никита Доронин</p>
+                <p class="muted">Web Developer · Frontend & Backend</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Наверх</a>
+                <a href="mailto:karacharovskii57@mail.com">Связаться</a>
+                <span class="muted">© <span id="year"></span></span>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
