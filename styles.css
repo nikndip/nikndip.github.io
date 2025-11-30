@@ -1,0 +1,144 @@
+/* Базовая типографика и сетка */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Шапка сайта */
+.site-header {
+    background-color: #222;
+    color: #fff;
+    padding: 16px 0;
+}
+
+.site-title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    padding: 24px 0 40px 0;
+    background-color: #f5f5f5;
+}
+
+.hero h2 {
+    margin-top: 0;
+}
+
+.hero p {
+    line-height: 1.6;
+}
+
+/* Блоки секций */
+.hero-cta ul,
+.skills ul,
+.projects-list {
+    padding-left: 20px;
+}
+
+.hero-cta li,
+.skills li {
+    margin-bottom: 6px;
+}
+
+/* О себе */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1 1 260px;
+}
+
+.about-photo {
+    flex: 0 0 200px;
+}
+
+.about-photo img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Проекты */
+.projects-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.project-item a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+.site-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 12px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 20px;
+    }
+
+    .site-nav a {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+    main {
+        padding-top: 16px;
+    }
+}
